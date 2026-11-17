@@ -8,7 +8,7 @@ Implement Séance as a Next.js 15 App Router application deployed on Vercel. The
 
 ## Tasks
 
-- [ ] 1. Scaffold project and shared schema layer
+- [x] 1. Scaffold project and shared schema layer
   - Initialise a Next.js 15 project with the App Router, TypeScript strict mode, Vitest, and fast-check; set up `eslint` and `prettier`; create the directory skeleton (`src/lib`, `src/adapters`, `src/app`, `src/components`, `src/hooks`, `data/`)
   - Write Zod schemas for `Market`, `Match`, `ConsensusEvent`, `Divergence`, and `DivergenceConfig` in `src/lib/schemas.ts`; export inferred TypeScript types alongside each schema
   - Add `DivergenceConfig` startup-validation logic that reads `DIVERGENCE_THRESHOLD` from `process.env` (default `0.05`) and throws if the parsed value is outside `[0.01, 1.00]`
